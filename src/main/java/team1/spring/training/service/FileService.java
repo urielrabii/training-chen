@@ -1,0 +1,89 @@
+package team1.spring.training.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
+import org.springframework.web.multipart.MultipartFile;
+import team1.spring.training.models.File;
+import team1.spring.training.repository.FileRepository;
+
+import java.io.FileNotFoundException;
+import java.nio.file.FileAlreadyExistsException;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.List;
+
+@Service
+public class FileService implements IFileService {
+
+    @Value("${service.formatter-Pattern:yyyy-MM-dd hh:mm:ss}")
+    private String formatterPattern;
+
+    private  DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss");
+
+    @Value("${service.directory-name}")
+    // create 2 profiles, one for prod one for dev
+    private String directoryName;
+
+    @Autowired
+    private FileRepository fileRepository;
+
+    @Override
+    public List<File> getAllFiles() throws NullPointerException{
+        if(fileRepository.findAll().isEmpty()){
+            throw new NullPointerException();
+        }
+        return fileRepository.findAll();
+    }
+
+    @Override
+    public File getFileByName(String name) throws FileNotFoundException {
+        if(fileRepository.findByName(name).isEmpty()){
+            throw new FileNotFoundException();
+        }
+        return fileRepository.findByName(name).get(0);
+    }
+
+    @Override
+    public void addFile(MultipartFile multipartFile) throws FileAlreadyExistsException {
+       File fileToAdd = convertMultiFileToFile(multipartFile);
+        List<File> allFiles = fileRepository.findAll();
+       for(File file : allFiles) {
+           if(file.getName().equals(fileToAdd.getName())) {
+                throw new FileAlreadyExistsException(fileToAdd.getName());
+           }
+       }
+        fileRepository.save(fileToAdd);
+    }
+
+    @Override
+    public void updateFile(MultipartFile multipartFile) {
+        fileRepository.save(convertMultiFileToFile(multipartFile));
+    }
+
+    private File convertMultiFileToFile(MultipartFile multipartFile) {
+       return new File(multipartFile.getOriginalFilename(),directoryName + multipartFile.getOriginalFilename(), LocalDateTime.now().format(formatter));
+    }
+
+    @Override
+    public void deleteFile(String name) throws FileNotFoundException {
+        if(fileRepository.findByName(name).isEmpty()){
+            throw new FileNotFoundException();
+        }
+        fileRepository.delete(fileRepository.findByName(name));
+    }
+}
+/**
+הארות:1. יצירת מספר פרופילים (בעיקר לטובת שינוי בין סביבת לינוקס לסביבת windows עבור מיקום שמירת הקבצים. כמו כן הוספת המשתנה spring.profiles.active לריצה של spring כדי להחליט על הפרופיל.
+
+        4. שינוי הטסטים כך שיפעילו שמירה ולאחר מכן יבדקו שאכן נשמר בDB . (כאן צריך לקרוא על H2 ובדיקות )
+
+        העשרה
+        6.את יכולה לקרוא על האנוטציה @controllerAdvice לטיפול בשגיאות . מומלץ
+        https://www.baeldung.com/exception-handling-for-rest-with-spring#controlleradvice
+
+        7. קריאה על יצירת configurationproperties class בספרינג לטובת שמירת מספר רב של משתנים בapplication.propeties .
+        https://www.baeldung.com/configuration-properties-in-spring-boot#simple-properties
+
+        בהצלחה ! **/
