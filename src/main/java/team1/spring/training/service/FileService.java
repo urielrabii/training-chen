@@ -9,7 +9,6 @@ import team1.spring.training.repository.FileRepository;
 
 import java.io.FileNotFoundException;
 import java.nio.file.FileAlreadyExistsException;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
@@ -22,8 +21,7 @@ public class FileService implements IFileService {
 
     private  DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss");
 
-    @Value("${service.directory-name}")
-    // create 2 profiles, one for prod one for dev
+    @Value("${service.directory-name:C:\\upload\\}")
     private String directoryName;
 
     @Autowired
@@ -75,8 +73,6 @@ public class FileService implements IFileService {
     }
 }
 /**
-הארות:1. יצירת מספר פרופילים (בעיקר לטובת שינוי בין סביבת לינוקס לסביבת windows עבור מיקום שמירת הקבצים. כמו כן הוספת המשתנה spring.profiles.active לריצה של spring כדי להחליט על הפרופיל.
-
         4. שינוי הטסטים כך שיפעילו שמירה ולאחר מכן יבדקו שאכן נשמר בDB . (כאן צריך לקרוא על H2 ובדיקות )
 
         העשרה
