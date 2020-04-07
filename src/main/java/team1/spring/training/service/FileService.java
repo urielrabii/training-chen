@@ -72,14 +72,3 @@ public class FileService implements IFileService {
         fileRepository.delete(fileRepository.findByName(name));
     }
 }
-/**
-        4. שינוי הטסטים כך שיפעילו שמירה ולאחר מכן יבדקו שאכן נשמר בDB . (כאן צריך לקרוא על H2 ובדיקות )
-
-        העשרה
-        6.את יכולה לקרוא על האנוטציה @controllerAdvice לטיפול בשגיאות . מומלץ
-        https://www.baeldung.com/exception-handling-for-rest-with-spring#controlleradvice
-
-        7. קריאה על יצירת configurationproperties class בספרינג לטובת שמירת מספר רב של משתנים בapplication.propeties .
-        https://www.baeldung.com/configuration-properties-in-spring-boot#simple-properties
-
-        בהצלחה ! **/
