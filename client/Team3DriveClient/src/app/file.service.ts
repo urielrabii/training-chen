@@ -8,7 +8,7 @@ import { catchError, map, tap } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class FileService {
-  private filesUrl = 'files';  // URL to web api
+  private filesUrl = 'http://localhost:8080/files';  // URL to web api
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })  
   };

@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1cdbb2c-1c4f-4305-88f8-84ababc2b492" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/Team3DriveClient/src/app/file.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/Team3DriveClient/src/app/file.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/team1/spring/training/controllers/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team1/spring/training/controllers/FileController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,22 +132,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="440" height="466" key="DebuggerActiveHint/0.0.1366.728@0.0.1366.728" timestamp="1585670962446" />
-    <state width="1323" height="383" key="GridCell.Tab.0.bottom" timestamp="1587111135375">
+    <state width="1323" height="79" key="GridCell.Tab.0.bottom" timestamp="1587140687435">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="383" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1587111135375" />
-    <state width="1323" height="383" key="GridCell.Tab.0.center" timestamp="1587111135374">
+    <state width="1323" height="79" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1587140687435" />
+    <state width="1323" height="79" key="GridCell.Tab.0.center" timestamp="1587140687435">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="383" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1587111135374" />
-    <state width="1323" height="383" key="GridCell.Tab.0.left" timestamp="1587111135374">
+    <state width="1323" height="79" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1587140687435" />
+    <state width="1323" height="79" key="GridCell.Tab.0.left" timestamp="1587140687435">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="383" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1587111135374" />
-    <state width="1323" height="383" key="GridCell.Tab.0.right" timestamp="1587111135374">
+    <state width="1323" height="79" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1587140687435" />
+    <state width="1323" height="79" key="GridCell.Tab.0.right" timestamp="1587140687435">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="383" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1587111135374" />
+    <state width="1323" height="79" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1587140687435" />
     <state width="1323" height="88" key="GridCell.Tab.1.bottom" timestamp="1585671172524">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

@@ -1,5 +1,7 @@
 export interface File {
-    fileName:string;
-    size:string;
-    time:string;   
+    id:string;
+    name:string;
+    location:string;
+    time:string; 
+    size:string;  
   }

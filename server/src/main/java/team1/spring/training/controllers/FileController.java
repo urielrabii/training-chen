@@ -29,7 +29,7 @@ public class FileController {
         }
         return new ResponseEntity<File>(file, HttpStatus.OK);
     }
-
+    @CrossOrigin(origins = "http://localhost:4200")
     @GetMapping(FileController.FUNCTION_PATH)
     public ResponseEntity<List<File>> getAllFiles() {
         List<File> list = null;
