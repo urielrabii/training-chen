@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FilesComponent } from './files/files.component';
 import { HttpClientModule }    from '@angular/common/http';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FilesComponent
+    FilesComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,

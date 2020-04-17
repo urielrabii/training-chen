@@ -32,4 +32,13 @@ getFiles(): Observable<File[]> {
       return of(result as T);
     };
   }
+
+  /* GET files whose name contains search term */
+  searchFiles(term: string): Observable<File[]> {
+    if (!term.trim()) {
+      // if not search term, return empty hero array.
+      return of([]);
+    }
+    return this.http.get<File[]>(`${this.filesUrl}/?name=${term}`);
+  }
 }
