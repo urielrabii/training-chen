@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'Team3DriveClientgNew'`, () => {
+  it(`should have as title 'Team3DriveClient'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('Team3DriveClientgNew');
+    expect(app.title).toEqual('Team3DriveClient');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('Team3DriveClientgNew app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('Team3DriveClient app is running!');
   });
 });
