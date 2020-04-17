@@ -1,16 +1,21 @@
 import { Component, OnInit } from '@angular/core';
 import { File } from '../file';
-import { FILES } from '../mock-files';
+import { FileService } from '../file.service';
+
 @Component({
   selector: 'app-files',
   templateUrl: './files.component.html',
   styleUrls: ['./files.component.css']
 })
 export class FilesComponent implements OnInit {
-  files = FILES;
-  constructor() { }
+  files: File[];
+  constructor(private fileService: FileService) { }
 
-  ngOnInit(): void {
+  ngOnInit(){
+    this.getFiles();
   }
-
+  getFiles(): void {
+    this.fileService.getFiles()
+    .subscribe(files => this.files = files);
+  }
 }

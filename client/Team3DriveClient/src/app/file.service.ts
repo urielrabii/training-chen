@@ -8,14 +8,14 @@ import { catchError, map, tap } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class FileService {
-  private filesUrl = '/files';  // URL to web api
+  private filesUrl = 'files';  // URL to web api
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })  
   };
   constructor(private http: HttpClient) { }
 
   /** GET files from the server */
-getHeroes(): Observable<File[]> {
+getFiles(): Observable<File[]> {
   return this.http.get<File[]>(this.filesUrl)
       .pipe(
         catchError(this.handleError<File[]>('getFiles', []))
