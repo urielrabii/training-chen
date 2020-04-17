@@ -2,45 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1cdbb2c-1c4f-4305-88f8-84ababc2b492" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../client/Team3DriveClient" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/server.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/resources/main/application-prod.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application-dev.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/team1/spring/training/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team1/spring/training/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/team1/spring/training/controllers/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team1/spring/training/controllers/FileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/team1/spring/training/models/File.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team1/spring/training/models/File.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/team1/spring/training/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team1/spring/training/models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/team1/spring/training/repository/FileRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team1/spring/training/repository/FileRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/team1/spring/training/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team1/spring/training/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/team1/spring/training/service/FileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team1/spring/training/service/FileService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/team1/spring/training/service/IFileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team1/spring/training/service/IFileService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/team1/spring/training/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team1/spring/training/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application-dev.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/application-prod.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-prod.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/test/java/team1/spring/training/ControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team1/spring/training/ControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/test/java/team1/spring/training/RepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team1/spring/training/RepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradlew.bat" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,22 +137,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="440" height="466" key="DebuggerActiveHint/0.0.1366.728@0.0.1366.728" timestamp="1585670962446" />
-    <state width="1323" height="88" key="GridCell.Tab.0.bottom" timestamp="1585671172523">
+    <state width="1323" height="383" key="GridCell.Tab.0.bottom" timestamp="1587111135375">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="88" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585671172523" />
-    <state width="1323" height="88" key="GridCell.Tab.0.center" timestamp="1585671172523">
+    <state width="1323" height="383" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1587111135375" />
+    <state width="1323" height="383" key="GridCell.Tab.0.center" timestamp="1587111135374">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="88" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585671172523" />
-    <state width="1323" height="88" key="GridCell.Tab.0.left" timestamp="1585671172523">
+    <state width="1323" height="383" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1587111135374" />
+    <state width="1323" height="383" key="GridCell.Tab.0.left" timestamp="1587111135374">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="88" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585671172523" />
-    <state width="1323" height="88" key="GridCell.Tab.0.right" timestamp="1585671172523">
+    <state width="1323" height="383" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1587111135374" />
+    <state width="1323" height="383" key="GridCell.Tab.0.right" timestamp="1587111135374">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="88" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585671172523" />
+    <state width="1323" height="383" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1587111135374" />
     <state width="1323" height="88" key="GridCell.Tab.1.bottom" timestamp="1585671172524">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
