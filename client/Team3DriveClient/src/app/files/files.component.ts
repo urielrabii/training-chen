@@ -11,11 +11,13 @@ export class FilesComponent implements OnInit {
   filteredFiles: File[];
   private _searchTerm: string;
 
-  constructor(private fileService: FileService) { }
+  constructor(private fileService: FileService) {
+   }
 
   ngOnInit(){
+    this._searchTerm = "";
     this.getFiles();
-    this.filteredFiles = this.files;
+     this.filteredFiles = this.files;
   }
 
   getFiles(): void {
@@ -23,13 +25,15 @@ export class FilesComponent implements OnInit {
     .subscribe(files => this.files = files);
   }
 
-  get searchTerm():string{
+  get searchTerm():string{  
+    this.filteredFiles = this.filterFiles(this._searchTerm);
     return this._searchTerm;
   }
   set searchTerm(value: string){
     this._searchTerm = value;
-    this.filteredFiles = this.filterFiles(value);
+    this.filteredFiles = this.filterFiles(this._searchTerm);
   }
+  
   filterFiles(searchString: string){
     return this.files.filter(file=>file.name.toLocaleLowerCase().indexOf(searchString.toLocaleLowerCase()) !== -1);
   }
