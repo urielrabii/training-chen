@@ -1,4 +1,7 @@
-<app-search></app-search>
+<!-- <app-search></app-search> -->
+<div>
+  <input type="text" class = "form-control" placeholder="search.." [(ngModel)]="searchTerm"/>
+</div>
 <table class="table">
     <thead>
       <tr>
@@ -12,7 +15,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let file of files">
+      <tr *ngFor="let file of filteredFiles">
         <th scope="row">{{file.id}}</th>
         <th scope="row">{{file.name}}</th>
         <td>{{file.location}}</td>
@@ -22,4 +25,4 @@
         <td>@mdo</td>
       </tr>
     </tbody>
-  </table>
+  </table> 
