@@ -5,13 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FilesComponent } from './files/files.component';
 import { HttpClientModule }    from '@angular/common/http';
-import { SearchComponent } from './search/search.component';
+import { PopupComponent } from './popup/popup.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FilesComponent,
-    SearchComponent
+    PopupComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,5 @@
 <!-- <app-search></app-search> -->
+<div class = "container">
 <div>
   <input type="text" class = "form-control" placeholder="search.." [(ngModel)]="searchTerm"/>
 </div>
@@ -21,8 +22,15 @@
         <td>{{file.location}}</td>
         <td>{{file.time}}</td>
         <td>{{file.size}}</td>
-        <td>@mdo</td>
-        <td>@mdo</td>
+        <td> 
+            <button type="button" class="btn btn-info">Download</button>
+        </td>
+        <td> 
+          <a routerLink="/view/{{file.name}}">
+            <button type="button" class="btn btn-info">view</button>
+          </a>
+       </td>
       </tr>
     </tbody>
   </table> 
+</div>

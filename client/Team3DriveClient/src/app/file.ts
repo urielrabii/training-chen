@@ -3,5 +3,5 @@ export interface File {
     name:string;
     location:string;
     time:string; 
-    size:string;  
+    size:string; 
   }

@@ -31,10 +31,14 @@ public class File implements Serializable {
     @JsonProperty
     @Column
     private String time;
+    @JsonProperty
+    @Column
+    private Long size;
 
- public File(String name, String location, String time) {
+ public File(String name, String location, String time, Long size) {
         this.name = name;
         this.location = location;
         this.time = time;
+        this.size = size;
     }
 }

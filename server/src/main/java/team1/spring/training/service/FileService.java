@@ -61,7 +61,8 @@ public class FileService implements IFileService {
     }
 
     private File convertMultiFileToFile(MultipartFile multipartFile) {
-       return new File(multipartFile.getOriginalFilename(),directoryName + multipartFile.getOriginalFilename(), LocalDateTime.now().format(formatter));
+       return new File(multipartFile.getOriginalFilename(),directoryName + multipartFile.getOriginalFilename(),
+               LocalDateTime.now().format(formatter), multipartFile.getSize());
     }
 
     @Override
