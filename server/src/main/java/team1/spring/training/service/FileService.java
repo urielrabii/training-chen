@@ -21,7 +21,7 @@ public class FileService implements IFileService {
 
     private  DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss");
 
-    @Value("${service.directory-name:C:\\upload\\}")
+    @Value("${service.directory-name:C:\\chen\\Team3TrainingNew\\training-chen\\client\\Team3DriveClient\\src\\assets\\img}")
     private String directoryName;
 
     @Autowired
@@ -61,8 +61,9 @@ public class FileService implements IFileService {
     }
 
     private File convertMultiFileToFile(MultipartFile multipartFile) {
-       return new File(multipartFile.getOriginalFilename(),directoryName + multipartFile.getOriginalFilename(),
-               LocalDateTime.now().format(formatter), multipartFile.getSize());
+       return new File(multipartFile.getOriginalFilename().substring(0, multipartFile.getOriginalFilename().lastIndexOf('.')),
+               directoryName + multipartFile.getOriginalFilename(),
+                        LocalDateTime.now().format(formatter), multipartFile.getSize());
     }
 
     @Override

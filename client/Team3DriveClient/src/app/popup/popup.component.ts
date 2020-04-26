@@ -1,9 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import { Location } from '@angular/common';
-
+import { Component, OnInit, Input  } from '@angular/core';
 import { File }         from '../file';
-import { FileService }  from '../file.service';
 
 @Component({
   selector: 'app-popup',
@@ -11,28 +7,23 @@ import { FileService }  from '../file.service';
   styleUrls: ['./popup.component.css']
 })
 export class PopupComponent implements OnInit {
-image: File;
+@Input()
+ image: File;
 
-  constructor(
-    private route: ActivatedRoute,
-    private fileService: FileService,
-    private location: Location
-  ) { }
+  constructor() {}
 
   ngOnInit(): void {
-  //  this.getImage();
   }
 
-  // getImage(): void {
-  //   const name = +this.route.snapshot.paramMap.get('name');
-  //   this.fileService.getFile(name)
-  //     .subscribe(image => this.image = image);
-  // }
-
-  goBack(): void {
-    this.location.back();
+  getImgSource(): string {
+  const directory = "assets\\img\\"
+  return directory + this.image.location.substr(this.image.location.lastIndexOf('\\') + 1);
   }
+
 }
+
+
+
 
 
 

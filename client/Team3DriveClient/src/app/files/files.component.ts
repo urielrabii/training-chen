@@ -10,7 +10,7 @@ export class FilesComponent implements OnInit {
   files: File[];
   filteredFiles: File[];
   private _searchTerm: string;
-
+  selectedFile: File;
   constructor(private fileService: FileService) {
    }
 
@@ -19,7 +19,13 @@ export class FilesComponent implements OnInit {
     this.getFiles();
      this.filteredFiles = this.files;
   }
-
+  isImage(file: File): boolean{
+    const acceptedImageTypes = ['gif', 'jpeg', 'png', 'jpg'];
+    return acceptedImageTypes.includes(file.location.substr(file.location.lastIndexOf('.') + 1));
+  }
+  onSelect(file: File): void {
+    this.selectedFile = file;
+  }
   getFiles(): void {
     this.fileService.getFiles()
     .subscribe(files => this.files = files);

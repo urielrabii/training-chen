@@ -21,6 +21,14 @@ getFiles(): Observable<File[]> {
         catchError(this.handleError<File[]>('getFiles', []))
       );
   }
+ 
+/** GET file by id. Will 404 if id not found */
+getFile(name: string): Observable<File> {
+  const url = `${this.filesUrl}/${name}`;
+  return this.http.get<File>(url).pipe(
+    catchError(this.handleError<File>(`getFile name=${name}`))
+  );
+}
 
   private handleError<T>(operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {

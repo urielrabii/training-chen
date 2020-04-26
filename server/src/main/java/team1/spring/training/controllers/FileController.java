@@ -20,13 +20,13 @@ public class FileController {
     private IFileService fileService;
 
     @GetMapping(FileController.FUNCTION_PATH + "/{name}")
-    public ResponseEntity<File> getFileByName(@PathVariable("name") String name) {
+    public  ResponseEntity<File> getFileByName(@PathVariable() String name) {
         File file = null;
         try {
             file = fileService.getFileByName(name);
         } catch (FileNotFoundException e) {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
-        }
+         }
         return new ResponseEntity<File>(file, HttpStatus.OK);
     }
     @CrossOrigin(origins = "http://localhost:4200")
